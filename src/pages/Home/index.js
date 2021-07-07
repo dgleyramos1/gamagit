@@ -11,7 +11,7 @@ function App(props) {
       const repositoriesName = [];
       repositories.map((repository) => {
         repositoriesName.push(repository.name);
-      })
+      });
       localStorage.setItem('repositoriesName', JSON.stringify(repositoriesName));
     });
   }
