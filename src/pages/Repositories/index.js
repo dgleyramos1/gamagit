@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import * as S from './styled';
 
 
+
 export default function Repositories() {
     const [ repositories, setRepoitories ] = useState([]);
 
@@ -23,6 +24,7 @@ export default function Repositories() {
                     )
                 })}
             </S.List>
+            <S.LinkHome to="/">Voltar</S.LinkHome>
         </S.Container>
     );
 }
